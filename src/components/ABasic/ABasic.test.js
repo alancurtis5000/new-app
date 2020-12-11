@@ -4,9 +4,10 @@ import ABasic from './ABasic';
 describe('ABasic', () => {
   afterEach(cleanup);
 
-  it('renders', () => {
+  test('renders ABasic text', () => {
     render(<ABasic />);
-    expect(true).toBe(true);
+    const appText = screen.getByText(/ABasic/i);
+    expect(appText).toBeInTheDocument();
   });
 
   it('get by text', () => {
