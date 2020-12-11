@@ -4,7 +4,7 @@ const ABasic = (props) => {
   return (
     <div className="ABasic">
       ABasic
-      <div data-testId="test-prop-id">{testProp}</div>
+      <div data-testid="test-prop-id">{testProp}</div>
     </div>
   );
 };
